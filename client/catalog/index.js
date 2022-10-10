@@ -1,12 +1,57 @@
-const sendEmail = (e) => {
-    e.preventDefault()
-    Swal.fire(
-        'Sus datos fueron guardados correctamente',
-        'Nos contactaremos a la brevedad',
-        'success'
-      )
+const API_KEY = "563492ad6f917000010000013fedd73aac834380a3218fa271bef31a"
+const URL = "https://api.pexels.com/v1/search?query=expensive%20cars"
+
+function getImages() {
+  return new Promise((resolve, reject) => {
+    fetch(URL, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': API_KEY
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // console.log(data)
+        resolve(data)
+      });
+  })
 }
 
-let form = document.getElementById("form")
+function mapCards() {
+  let cards = document.getElementById("cards")
+  getImages().then(cars => {
+    console.log(cars)
+    for (let car of cars.photos) {
+      let div = document.createElement("div")
+      div.className = "cardContainer"
+      let topContainer = document.createElement("div")
+      let name = document.createElement("p")
+      topContainer.className = "cardDescription"
+      name.innerHTML = car.alt
+      let img = document.createElement("img")
+      img.src = car.src.medium
+      img.className = "cardImg"
+      let button = document.createElement("button")
+      button.innerHTML = "❤"
+      button.className = "button"
+      button.addEventListener("click", addFav)
+      topContainer.appendChild(name)
+      topContainer.appendChild(button)
+      div.appendChild(topContainer)
+      div.appendChild(img)
+      cards.appendChild(div)
+    }
+  })
+}
+mapCards()
 
-form.addEventListener("submit", sendEmail)
+const addFav = (e) => {
+  e.preventDefault()
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'El auto fue agregado a favoritos',
+    showConfirmButton: false,
+    timer: 1000
+  })
+}
