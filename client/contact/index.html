@@ -6,34 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body id="body">
     <form id="form">
-        <div class="container">
-            <label>
-                Nombre
-            </label>
-            <input>
-        </div>
-        <div class="container">
-            <label>
-                Apellido
-            </label>
-            <input>
-        </div>
-        <div class="container">
-            <label>
-                Correo
-            </label>
-            <input>
-        </div>
-        <div class="container">
-            <label>
-                Consulta
-            </label>
-            <textarea></textarea>
+        <div id="formContainer">
+            <div id="leftForm">
+                <div class="container">
+                    <input placeholder="Nombre">
+                </div>
+                <div class="container">
+                    <input placeholder="Apellido">
+                </div>
+                <div class="container">
+                    <input placeholder="Email">
+                </div>
+                <div class="container">
+                    <input placeholder="Telefono">
+                </div>
+                <div class="container">
+                    <input placeholder="Domicilio">
+                </div>
+            </div>
+            <div class="containerText">
+                <textarea placeholder="Mandanos tu consulta"></textarea>
+            </div>
         </div>
         <button id="button">Enviar</button>
     </form>
