@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERSAN</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="body">
+    <nav class="navbar">
+        <img src="./img/logo_white.png" alt="VERSAN">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_cambio" />
+            <label for="checkbox_cambio" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#where">Where to Find Us</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <section id="aboutUs">
+        <h1 class="title">About Us</h1>
+        <hr>
+    </section>
+
+    <section id="benefits">
+        <h1 class="title">Benefits</h1>
+        <hr>
+    </section>
+
+    <section id="catalog">
+        <h1 class="title">Catalog</h1>
+        <hr>
+        <div id="bodyCatalog">
+            <div id="cards"></div>
+            <script src="index.js"></script>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <hr>
+        <div id="bodyContact">
+            <form id="form">
+                <div id="formContainer">
+                    <div id="leftForm">
+                        <div class="container">
+                            <input placeholder="Nombre">
+                        </div>
+                        <div class="container">
+                            <input placeholder="Apellido">
+                        </div>
+                        <div class="container">
+                            <input placeholder="Email">
+                        </div>
+                        <div class="container">
+                            <input placeholder="Telefono">
+                        </div>
+                        <div class="container">
+                            <input placeholder="Domicilio">
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <textarea placeholder="Send a question"></textarea>
+                    </div>
+                </div>
+                <button id="button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="where">
+        <h1 class="title">Where are we?</h1>
+        <hr>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h4>VERSAN Premium Cars</h4>
+            <p>Seguinos en nuestras redes.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+            <div class="footer-bottom">
+                <p>Copyright &copy; <a href="#">Grupo 7</a> </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sendEmail.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

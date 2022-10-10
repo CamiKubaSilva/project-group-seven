@@ -1,117 +1,141 @@
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   }
-   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
+}
 
-   /* NAVBAR ---------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    text-align: center;
+}
+
+.title {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+/* NAVBAR ---------------------- */
 .navbar {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color:rgb(33,33,33);
+    background-color: rgb(33, 33, 33);
     color: #fff;
-   }
-   .nav-links a {
+}
+
+.nav-links a {
     color: #fff;
-   }
-   .menu {
+}
+
+.menu {
     display: flex;
     gap: 1em;
     font-size: 18px;
-   }
-   .menu li:hover {
+}
+
+.menu li:hover {
     background-color: #c3002f;
     border-radius: 5px;
     transition: 0.3s ease;
-   }
-   .menu li {
+}
+
+.menu li {
     padding: 5px 14px;
-   }
+}
 
 /* Uso del Checkbox */
-input[type=checkbox]{
+input[type=checkbox] {
     display: none;
-   } 
-   .hamburger {
+}
+
+.hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
-   }
-   @media (max-width: 600px) {
-   .menu { 
-    display:none;
-    position: absolute;
-    background-color:#333;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-   }
-   .menu li:hover {
-    display: inline-block;
-    background-color:#C3003F;
-    transition: 0.3s ease;
-   }
-   .menu li + li {
-    margin-top: 12px;
-   }
-   input[type=checkbox]:checked ~ .menu{
-    display: block;
-   }
-   .hamburger {
-    display: block;
-   }
-   }
-   /* FOOTER ---------------------- */
-   footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    height: auto;
-    width: 100vw;
+}
 
-    padding-top: 40px;
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #C3003F;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* FOOTER ---------------------- */
+footer {
+    position: static;
+    background: #111;
+    width: 100%;
+    padding-top: 3vw;
     color: #fff;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-.footer-content p{
+
+.footer-content p {
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
     color: #cacdd2;
 }
-.socials{
+
+.socials {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
-.socials li{
+
+.socials li {
     margin: 0 10px;
 }
-.socials a{
+
+.socials a {
     text-decoration: none;
     color: #fff;
     border: 1.1px solid white;
@@ -120,25 +144,25 @@ input[type=checkbox]{
     border-radius: 50%;
 
 }
-.socials a i{
+
+.socials a i {
     font-size: 1.1rem;
     width: 20px;
     transition: color .5s ease;
 
 }
-.socials a:hover i{
+
+.socials a:hover i {
     color: #C3003F;
 }
 
-.footer-bottom{
+.footer-bottom {
     background: #000;
     width: 100vw;
-    padding: 20px;
-padding-bottom: 40px;
     text-align: center;
 }
- .footer-bottom p{
-float: left;
+
+.footer-bottom p {
     font-size: 14px;
     word-spacing: 2px;
- }
+}
