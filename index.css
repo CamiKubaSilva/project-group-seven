@@ -1,0 +1,198 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2vw
+}
+
+.title {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+/* NAVBAR ---------------------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+    background-color: rgb(33, 33, 33);
+    color: #fff;
+}
+
+#separator {
+    height: 3.5vw;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+#aboutUs {
+    width: 100%;
+}
+
+.textContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    font-size: 1.5vw;
+    width: 70%;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #c3002f;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* Uso del Checkbox */
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #C3003F;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* FOOTER ---------------------- */
+footer {
+    position: static;
+    background: #111;
+    width: 100%;
+    padding-top: 3vw;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+/* .socials a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .5s ease;
+} */
+
+.socials a:hover i {
+    color: #C3003F;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+#frame {
+    border-radius: 2vw;
+}

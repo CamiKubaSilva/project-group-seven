@@ -1,0 +1,46 @@
+.carrouselImg{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.autos{
+    position:relative;
+    z-index:-5;
+    width: 70%;
+    height: auto;
+    margin: 50px auto 50px;
+    overflow: hidden;
+    border-radius: 1vw;
+}
+
+.autos ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: aut 16s infinite alternate ease-in-out;
+}
+.autos li{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.autos img{
+    width: 100%;
+}
+
+@keyframes aut {
+    0% {margin-left:0%;}
+    20% {margin-left:0%;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    95%{margin-left:-300%;}
+
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERSAN</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="carrousel.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="body">
+    <nav class="navbar">
+        <img src="./img/logo_white.png" alt="VERSAN">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_cambio" />
+            <label for="checkbox_cambio" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="#carrousel">Back to top</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#where">Where to Find Us</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="separator"></div>
+
+    <section id="carrousel">
+        <div class="autos">
+            <ul>
+                <li><img class="carrouselImg" src="./img.jpg" alt=""></li>
+                <li><img class="carrouselImg" src="./img2.jpg" alt=""></li>
+                <li><img class="carrouselImg" src="./img3.jpg" alt=""></li>
+                <li><img class="carrouselImg" src="./img4.jpg" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="aboutUs">
+        <div class="textContainer">
+            <div id="text">
+                <h2>We offer you the best advice to make you feel at one with your vehicle. Thanks to all the brands we
+                    offer, we assure you confidence and comfort in the vehicle you choose.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog">
+        <h1 class="title">Our Cars</h1>
+        <hr>
+        <div id="bodyCatalog">
+            <div id="cards"></div>
+            <script src="index.js"></script>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <hr>
+        <h1>Consulta para asesorarte y conseguir tu mejor opción</h1>
+        <div id="bodyContact">
+            <form id="form">
+                <div id="formContainer">
+                    <div id="leftForm">
+                        <div class="container">
+                            <input placeholder="Nombre">
+                        </div>
+                        <div class="container">
+                            <input placeholder="Apellido">
+                        </div>
+                        <div class="container">
+                            <input placeholder="Email">
+                        </div>
+                        <div class="container">
+                            <input placeholder="Telefono">
+                        </div>
+                        <div class="container">
+                            <input placeholder="Domicilio">
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <textarea placeholder="Send a question"></textarea>
+                    </div>
+                </div>
+                <button id="button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="where">
+        <h1 class="title">Where are we?</h1>
+        <hr>
+        <p>Find our Showroom here!</p>
+        <p>Maipú esq. Alsina - Vicente López</p>
+        <iframe id="frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.7365806974235!2d-58.47996788481561!3d-34.53490128047734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6b0847d1cef%3A0xd2d38c2f86e30eb9!2sAv.%20Maip%C3%BA%2C%20Vicente%20L%C3%B3pez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665442050282!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h4>VERSAN Premium Cars</h4>
+            <p>Follow us on our networks.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+            <div class="footer-bottom">
+                <p>Copyright &copy; <a href="#">Grupo 7</a> </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sendEmail.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
