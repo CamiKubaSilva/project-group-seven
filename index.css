@@ -3,10 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -18,7 +20,11 @@ li {
 }
 
 section {
+    width: 100%;
     text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2vw
 }
 
 .title {
@@ -28,17 +34,40 @@ section {
 
 /* NAVBAR ---------------------- */
 .navbar {
+    position: fixed;
+    top: 0;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1vw;
     background-color: rgb(33, 33, 33);
     color: #fff;
 }
 
+#separator {
+    height: 3.5vw;
+}
+
 .nav-links a {
     color: #fff;
+}
+
+#aboutUs {
+    width: 100%;
+}
+
+.textContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    font-size: 1.5vw;
+    width: 70%;
 }
 
 .menu {
@@ -135,22 +164,19 @@ footer {
     margin: 0 10px;
 }
 
-.socials a {
+/* .socials a {
     text-decoration: none;
     color: #fff;
     border: 1.1px solid white;
     padding: 5px;
-
     border-radius: 50%;
-
 }
 
 .socials a i {
     font-size: 1.1rem;
     width: 20px;
     transition: color .5s ease;
-
-}
+} */
 
 .socials a:hover i {
     color: #C3003F;
@@ -165,4 +191,8 @@ footer {
 .footer-bottom p {
     font-size: 14px;
     word-spacing: 2px;
+}
+
+#frame {
+    border-radius: 2vw;
 }
