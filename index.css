@@ -97,35 +97,7 @@ input[type=checkbox] {
     user-select: none;
 }
 
-@media (max-width: 600px) {
-    .menu {
-        display: none;
-        position: absolute;
-        background-color: #333;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-    }
 
-    .menu li:hover {
-        display: inline-block;
-        background-color: #C3003F;
-        transition: 0.3s ease;
-    }
-
-    .menu li+li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked~.menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
 
 /* FOOTER ---------------------- */
 footer {
@@ -164,7 +136,7 @@ footer {
     margin: 0 10px;
 }
 
-/* .socials a {
+.socials a {
     text-decoration: none;
     color: #fff;
     border: 1.1px solid white;
@@ -176,7 +148,7 @@ footer {
     font-size: 1.1rem;
     width: 20px;
     transition: color .5s ease;
-} */
+}
 
 .socials a:hover i {
     color: #C3003F;
@@ -196,3 +168,93 @@ footer {
 #frame {
     border-radius: 2vw;
 }
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #C3003F;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* @media (max-width: 1666px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #C3003F;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 1920px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #C3003F;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+} */
