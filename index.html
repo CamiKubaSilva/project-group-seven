@@ -20,9 +20,9 @@
             <input type="checkbox" id="checkbox_cambio" />
             <label for="checkbox_cambio" class="hamburger">&#9776;</label>
             <div class="menu">
-                <li><a href="#carrousel">Back to top</a></li>
-                <li><a href="#aboutUs">About Us</a></li>
-                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#body">Back to top</a></li>
+                <li><a href="#carrousel">About Us</a></li>
+                <li><a href="#ourCars">Our Cars</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#where">Where to Find Us</a></li>
             </div>
@@ -50,11 +50,12 @@
                 </h2>
             </div>
         </div>
+        <div id="ourCars"></div>
     </section>
 
     <section id="catalog">
-        <h1 class="title">Our Cars</h1>
         <hr>
+        <h1 class="title">Our Cars</h1>
         <div id="bodyCatalog">
             <div id="cards"></div>
             <script src="index.js"></script>
@@ -64,25 +65,24 @@
     <section id="contact">
         <h1 class="title">Contact</h1>
         <hr>
-        <h1>Consulta para asesorarte y conseguir tu mejor opción</h1>
         <div id="bodyContact">
             <form id="form">
                 <div id="formContainer">
                     <div id="leftForm">
                         <div class="container">
-                            <input placeholder="Nombre">
+                            <input id="name" placeholder="Name">
                         </div>
                         <div class="container">
-                            <input placeholder="Apellido">
+                            <input id="lastName" placeholder="Last Name">
                         </div>
                         <div class="container">
-                            <input placeholder="Email">
+                            <input id="email" placeholder="Email">
                         </div>
                         <div class="container">
-                            <input placeholder="Telefono">
+                            <input id="phone" placeholder="Phone">
                         </div>
                         <div class="container">
-                            <input placeholder="Domicilio">
+                            <input id="address" placeholder="Address">
                         </div>
                     </div>
                     <div class="containerText">
@@ -115,7 +115,7 @@
                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
             </ul>
             <div class="footer-bottom">
-                <p>Copyright &copy; <a href="#">Grupo 7</a> </p>
+                <p>Copyright &copy; <a href="#">Group 7</a> </p>
             </div>
         </div>
     </footer>

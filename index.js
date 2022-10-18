@@ -46,7 +46,7 @@ function mapCards() {
 const addFav = (e) => {
     e.preventDefault()
     Swal.fire({
-        position: 'top-end',
+        position: 'top-mid',
         icon: 'success',
         title: 'The car has been added to favorites',
         showConfirmButton: false,
