@@ -1,17 +1,17 @@
 .carrouselImg{
-    width: 20vw;
-    height: 20vw;
+    width: 100%;
+    height: 30vw;
     object-fit: cover;
 }
 
 .autos{
     position:relative;
     z-index:-5;
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 50px auto 50px;
     overflow: hidden;
-    border-radius: 1vw;
+    
 }
 
 .autos ul{
