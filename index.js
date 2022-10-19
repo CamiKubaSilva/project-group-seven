@@ -19,20 +19,20 @@ function getImages() {
 function mapCards() {
     let cards = document.getElementById("cards")
     getImages().then(cars => {
-        console.log(cars)
         for (let car of cars.photos) {
             let div = document.createElement("div")
             div.className = "cardContainer"
             let topContainer = document.createElement("div")
             let name = document.createElement("p")
             topContainer.className = "cardDescription"
-            name.innerHTML = car.alt
+            name.innerHTML = "Add this car to your favs!"
+            name.className = "carName"
             let img = document.createElement("img")
             img.src = car.src.medium
             img.className = "cardImg"
             let button = document.createElement("button")
             button.innerHTML = "❤"
-            button.className = "button"
+            button.id = "buttonHearth"
             button.addEventListener("click", addFav)
             topContainer.appendChild(name)
             topContainer.appendChild(button)

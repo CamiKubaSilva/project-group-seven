@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -43,10 +43,6 @@ section {
     padding: 1vw;
     background-color: rgb(33, 33, 33);
     color: #fff;
-}
-
-#separator {
-    height: 3.5vw;
 }
 
 .nav-links a {
@@ -167,94 +163,15 @@ footer {
 
 #frame {
     border-radius: 2vw;
+    margin: 3vw;
+    height: 20vw;
+    width: 50%;
+    display: flex;
 }
 
-@media (max-width: 600px) {
-    .menu {
-        display: none;
-        position: absolute;
-        background-color: #333;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-    }
-
-    .menu li:hover {
-        display: inline-block;
-        background-color: #C3003F;
-        transition: 0.3s ease;
-    }
-
-    .menu li+li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked~.menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
+#where {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
-
-/* @media (max-width: 1666px) {
-    .menu {
-        display: none;
-        position: absolute;
-        background-color: #333;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-    }
-
-    .menu li:hover {
-        display: inline-block;
-        background-color: #C3003F;
-        transition: 0.3s ease;
-    }
-
-    .menu li+li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked~.menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
-
-@media (max-width: 1920px) {
-    .menu {
-        display: none;
-        position: absolute;
-        background-color: #333;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-    }
-
-    .menu li:hover {
-        display: inline-block;
-        background-color: #C3003F;
-        transition: 0.3s ease;
-    }
-
-    .menu li+li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked~.menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-} */
