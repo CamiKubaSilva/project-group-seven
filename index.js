@@ -26,12 +26,13 @@ function mapCards() {
             let name = document.createElement("p")
             topContainer.className = "cardDescription"
             name.innerHTML = "Add this car to your favs!"
+            name.className = "carName"
             let img = document.createElement("img")
             img.src = car.src.medium
             img.className = "cardImg"
             let button = document.createElement("button")
             button.innerHTML = "❤"
-            button.className = "button"
+            button.id = "buttonHearth"
             button.addEventListener("click", addFav)
             topContainer.appendChild(name)
             topContainer.appendChild(button)

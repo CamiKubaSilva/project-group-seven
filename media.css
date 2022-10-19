@@ -1,0 +1,135 @@
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #C3003F;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 1666px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #C3003F;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+@media (max-width: 450px) {
+    #carrousel {
+        margin-top: 20vw;
+    }
+
+    #aboutUs {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #C3003F;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .carName {
+        display: none;
+        width: 0;
+        margin: 0
+    }
+
+    .cardDescription {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #buttonHearth {
+        display: flex;
+        width: 4vw;
+        color: red;
+        margin: 2vw;
+        border: none;
+        border-radius: 1vw;
+        box-shadow: rgb(75, 75, 75) 0.2vw 0.2vw;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    #button {
+        font-size: 1.5vw;
+    }
+
+    #frame {
+        border-radius: 2vw;
+        margin: 3vw;
+        height: 30vw;
+        width: 70%;
+        display: flex;
+    }
+}
