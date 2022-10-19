@@ -4,7 +4,9 @@
     align-items: center;
     justify-content: center;
 }
-
+#catalog{
+    margin-top: 200px;
+}
 #cards {
     display: flex;
     width: 100%;
